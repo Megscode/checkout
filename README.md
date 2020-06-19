@@ -34,7 +34,7 @@ shop.checkout('ABCD') # => 115
 shop.checkout('AAA') # => 130
 shop.checkout('AAAAAA') # => 260
 
-input         outputgit p
+input         output
 A             50
 AA            100  
 B             30    
