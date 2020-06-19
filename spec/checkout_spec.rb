@@ -24,4 +24,8 @@ describe Shop do
     expect(shop.checkout('b')).to eq(-1)
   end
 
+  it 'should return -1 when given a blank string' do
+    expect(shop.checkout('')).to eq(-1)
+  end
+  
 end
