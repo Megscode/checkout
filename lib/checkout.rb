@@ -5,8 +5,10 @@ class Shop
       50
     elsif item == 'B'
       30
-    else
+    elsif item == 'C'
       20
+    else
+      15
     end
   end
 

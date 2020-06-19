@@ -15,4 +15,9 @@ describe Shop do
   it 'should return 20 when given C' do
     expect(shop.checkout('C')).to eq(20)
   end
+
+  it 'should return 15 when given D' do
+    expect(shop.checkout('D')).to eq(15)
+  end
+
 end
