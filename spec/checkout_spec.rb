@@ -35,5 +35,9 @@ describe Shop do
   it 'should return 35 when given CD' do
     expect(shop.checkout('CD')).to eq(35)
   end
+
+  it 'should return 45 when given BB' do
+    expect(shop.checkout('BB')).to eq(45)
+  end
   
 end

@@ -13,10 +13,12 @@ class Shop
     return -1 if item == ''
     total = 0
     indiv_item = item.split('')
+    count_of_b = indiv_item.count('B')
     indiv_item.each do |n| 
-      if @values[n.to_sym].nil? 
-        return -1
-      else 
+      return -1 if @values[n.to_sym].nil?
+      if n == 'B' && count_of_b.even?
+        total += 22.5
+      else
         total += @values[n.to_sym]
       end
     end
