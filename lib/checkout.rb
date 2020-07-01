@@ -10,7 +10,17 @@ class Shop
   end
 
   def checkout(item)
-    @values[item.to_sym].nil? ? -1 : @values[item.to_sym]
+    return -1 if item == ''
+    total = 0
+    indiv_item = item.split('')
+    indiv_item.each do |n| 
+      if @values[n.to_sym].nil? 
+        return -1
+      else 
+        total += @values[n.to_sym]
+      end
+    end
+    return total
   end
 
 end

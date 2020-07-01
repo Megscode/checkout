@@ -27,5 +27,9 @@ describe Shop do
   it 'should return -1 when given a blank string' do
     expect(shop.checkout('')).to eq(-1)
   end
+
+  it 'should return 80 when given AB' do
+    expect(shop.checkout('AB')).to eq(80)
+  end 
   
 end
